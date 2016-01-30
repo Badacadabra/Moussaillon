@@ -1,0 +1,860 @@
+/* ==================================== */ 
+/* ============== Reset ============== */
+/* ================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+hr {
+	border: dotted 2px #5C300D;
+	margin: 20px 0 20px 0;
+}
+
+/* =============================== */
+/* ======== Header & Nav ======== */
+/* ============================= */
+
+/* ======= Header ======= */
+
+@keyframes animationHeader {
+	0% { background-position: 0 -170px; }
+	50% { background-position: 0 0; }
+	100% { background-position: 0 -170px; }
+}
+
+@-webkit-keyframes animationHeader { /* Hack Chrome */
+	0% { background-position: 0 -170px; }
+	50% { background-position: 0 0; }
+	100% { background-position: 0 -170px; }
+}
+
+header {
+	height: 180px;
+	background: url('../../entrepot/images-fond/biere-fond_top.jpg') no-repeat fixed top;
+	animation: animationHeader 15s ease-in-out infinite;
+	-webkit-animation: animationHeader 15s ease-in-out infinite;
+}
+
+header h1 {
+	font-family: "florante_at_lauraregular", fantasy;
+	padding: 15px 35px 15px 35px;
+	color: #6F4012;
+	background-image: url('../../entrepot/images-fond/texture-bois.png');
+	text-align: center;
+	width: 33%;
+	margin: auto;
+	position: relative;
+	top: 115px;
+	text-shadow: 0px 0px 3px white;
+	border-radius: 30px 30px 0 0;
+	box-shadow: 0 0 15px #6F4012 inset;
+}
+
+@-moz-document url-prefix() { /* Hack Firefox */
+	header h1 { top: 113px; }
+}
+
+header img:first-child {
+	position: absolute;
+	top: 31px;
+	left: 100px;
+}
+
+header img:last-child {
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+/* ======= Nav ======= */
+
+#main-nav nav {
+	padding: 15px;
+	border-top: solid 5px #6F4012;
+	border-bottom: solid 5px #6F4012;
+	text-align: center;
+	background-image: url('../../entrepot/images-fond/texture-bois.png');
+	box-shadow: 0 0 50px #6F4012 inset;
+}
+
+#main-nav nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+#main-nav nav ul li {
+	border: inset 2px #B67846;
+	background-image: url('../../entrepot/images-fond/bouton.jpg');
+	box-shadow: 0 0 15px #6F4012 inset;
+	border-radius: 20px;
+	transition: background 1s linear;
+}
+
+#main-nav nav ul li:hover {
+	background-position: 0 100px;
+}
+
+#main-nav nav ul li a {
+	display: block;
+	padding: 15px;
+	color: #6F4012;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-shadow: 0 0 1px #6F4012;
+	/* text-shadow: 1px 1px 2px white; */
+}
+
+#main-nav nav ul li a:active {
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+
+/* =============================== */
+/* ============ Home ============ */
+/* ============================= */
+
+/* ======= Global ======= */
+
+@font-face {
+    font-family: 'florante_at_lauraregular';
+    src: url('../font/florlrg_-webfont.eot');
+    src: url('../font/florlrg_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/florlrg_-webfont.woff2') format('woff2'),
+         url('../font/florlrg_-webfont.woff') format('woff'),
+         url('../font/florlrg_-webfont.ttf') format('truetype'),
+         url('../font/florlrg_-webfont.svg#florante_at_lauraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrapper h3 {
+	color: #4C1D0D;
+	padding: 10px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: x-large;
+	font-variant: small-caps;
+	border-bottom: solid 5px #6F4012;
+	border-top: solid 5px #6F4012;
+	background-image: url('../../entrepot/images-fond/texture-bois.png');
+	text-shadow: 0 0 2px white;
+	box-shadow: 0 0 15px #6F4012 inset;
+}
+
+/* ======= Welcome ======= */
+
+#wrapper #welcome {
+	padding: 30px 0 30px 0;
+	background-image: url('../../entrepot/images-fond/biere-pattern.jpg');
+	display: flex;
+	justify-content: space-around;
+	box-shadow: 0 0 10px #6F4012 inset;
+}
+
+#wrapper #welcome article, #wrapper #welcome aside {
+	width: 45%;
+}
+
+#wrapper #welcome article h2, #wrapper #welcome article p {
+	color: #2B0900;
+	font-style: italic;
+	text-shadow: 0 0 1px #2B0900;
+}
+
+#wrapper #welcome article h2 {
+	text-align: center;
+	font-variant: small-caps;
+}
+
+#wrapper #welcome article p {
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 20px;
+	padding-top: 25px;
+	font-size: large;
+}
+
+#wrapper #welcome article p:first-letter {
+	font-size: x-large;
+}
+
+#wrapper #welcome article p a {
+	font-weight: bold;
+	color: #6F4012;
+}
+
+#wrapper #welcome article p a:hover {
+	color: #2B0900;
+}
+
+#wrapper #welcome aside {
+	display: flex;
+	justify-content: center;
+}
+
+#wrapper #welcome aside iframe {
+	width: 100%;
+	border: solid 15px rgba(111,64,18,0.3);
+	box-shadow: 1px 1px 5px black;
+	border-radius: 5px;
+}
+
+/* ======= Slider ======= */
+
+#wrapper #slider {
+	background-color: white;
+	margin: 10px 0 10px 0;
+}
+
+/* ======= News ======= */
+
+#wrapper #news {
+	padding-bottom: 30px;
+	background: url('../../entrepot/images-fond/biere-fond_main.jpg') no-repeat fixed bottom;
+	display: flex;
+	flex-direction: column;
+}
+
+#wrapper #news #sections-news {
+	width: 85%;
+	margin: auto;
+}
+
+#wrapper #news #sections-news section {
+	color: white;
+	background-color: #2B0900;
+	opacity: 0.9;
+	margin-top: 20px;
+	padding: 15px;
+	display: flex;
+	justify-content: space-around;
+	border: 15px solid black;
+	border-image: url('../../entrepot/images-fond/texture-bois.png') 42 round stretch;
+	box-shadow: 0 0 10px #2B0900;
+	transition: transform .5s ease;
+}
+
+#wrapper #news #sections-news section img {
+	border: 10px solid black;
+	border-image: url('../../entrepot/images-fond/texture-bois.png') 42 round stretch;
+	margin-right: 15px;
+}
+
+#wrapper #news #sections-news section article {
+	width: 75%;
+}
+
+#wrapper #news #sections-news section article h4 {
+	margin-top: 10px;
+	font-size: large;
+}
+
+#wrapper #news #sections-news section article p {
+	margin-top: 15px;
+}
+
+#wrapper #news #sections-news section article a {
+	color: #CC8300;
+	font-weight: bold;
+	font-size: large;
+}
+
+#wrapper #news #sections-news section article a:hover {
+	color: #6F4012;
+}
+
+/* =============================== */
+/* ========= Zythologie ========= */
+/* ============================= */
+
+#zythologie {
+	display: flex;
+	justify-content: center;
+	color: white;
+	background: url('../../entrepot/images-fond/biere-fond_main.jpg') no-repeat fixed bottom;
+}
+
+/* ======= Sommaire (out) ======= */
+
+#zythologie aside {
+	width: 30%;
+}
+
+#zythologie aside nav#sommaire-out {
+	padding: 0 30px 30px 30px;
+	margin-top: 30px;
+	color: #D08802;
+	background-color: #2B0900;
+	position: fixed;
+	opacity: 0.9;
+	box-shadow: 0 0 10px #2B0900;
+	border-radius: 50px 0 50px 0;
+}
+
+@media screen and (max-width: 1150px) {
+	#zythologie aside {
+		position: relative;
+		left: -57px;
+	}
+	
+	#zythologie aside nav#sommaire-out {
+		border-radius: 0 50px 50px 0;
+		box-shadow: 0 0 10px #2B0900;
+	}
+}
+
+#zythologie aside nav#sommaire-out h3 {
+	color: white;
+	font-size: x-large;
+	background-color: #592E0C;
+	text-align: center;
+	margin: 30px 0 30px 0;
+	text-shadow: 0 0 3px #2B0900;
+	border-radius: 50px 0 50px 0;
+}
+
+#zythologie aside nav#sommaire-out ul {
+	margin-left: 10px;
+	font-weight: bold;
+	list-style-type: none;
+	/* list-style-image: url('../../entrepot/images-fond/puce-biere.png'); */
+}
+
+#zythologie aside nav#sommaire-out ul:first-child {
+	border-left: dotted 2px #CF8901; 
+}
+
+#zythologie aside nav#sommaire-out ul li {
+	font-size: large;
+}
+
+#zythologie aside nav#sommaire-out ul li ul li {
+	font-size: medium;
+	font-weight: normal;
+	font-style: italic;
+	margin-left: 15px;
+	list-style-image: none;
+}
+
+#zythologie aside nav#sommaire-out ul li ul li ul li {
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	margin-left: 30px;
+}
+
+#zythologie aside nav#sommaire-out a {
+	color: #D08802;
+}
+
+#zythologie aside nav#sommaire-out .level-1:hover a, 
+#zythologie aside nav#sommaire-out .level-2:hover a,
+#zythologie aside nav#sommaire-out .level-3:hover a {
+	color: #764C12;
+}
+
+/* ======= Container ======= */
+
+#zythologie #container {
+	width: 60%;
+	padding-top: 30px;
+	text-align: justify;
+	background-color: #2B0900;
+	opacity: 0.9;
+	box-shadow: 0 0 10px #2B0900;
+}
+
+#zythologie #container nav#sommaire-in {
+	display: none;
+}
+
+#zythologie #container h2 {
+	background-color: #592E0C;
+	margin-bottom: 30px;
+	text-align: center;
+	text-shadow: 0 0 3px #2B0900;
+}
+
+#zythologie #container h3, #zythologie #container h4, #zythologie #container h5 {
+	color: #CC8300;
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+	text-align: left;
+}	
+
+#zythologie #container h3 {
+	font-size: x-large;
+}
+
+#zythologie #container h4 {
+	font-style: italic;
+}
+
+#zythologie #container p {
+	padding-bottom: 15px;
+	width: 90%;
+	margin: auto;
+	text-align: justify;
+}
+
+#zythologie #container p:last-child {
+	margin-bottom: 30px;
+}
+
+#zythologie #container ol, #zythologie #container ul {
+	width: 90%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+#zythologie #container ol li, #zythologie #container ul li {
+	color: #DEE3CD;
+	margin: 10px;
+}
+
+#zythologie #container ul {
+	list-style-image: url('../../entrepot/images-fond/puce-biere.png');
+}
+
+/* =============================== */
+/* ========= Catalogue ========== */
+/* ============================= */
+
+#catalogue {
+	background: url('../../entrepot/images-fond/biere-fond_main.jpg') no-repeat fixed bottom;
+}
+
+#catalogue #container {
+	width: 80%;
+	margin: auto;
+	padding-top: 30px;
+	text-align: center;
+	background-color: #2B0900;
+	opacity: 0.9;
+	box-shadow: 0 0 10px #2B0900;
+}
+
+#catalogue #container h2 {
+	color: white;
+	background-color: #592E0C;
+	margin-bottom: 30px;
+	text-shadow: 0 0 3px #2B0900;
+}
+
+#catalogue #container p {
+	color: white;
+	padding-bottom: 15px;
+	width: 90%;
+	margin: auto;
+	text-align: justify;
+}
+
+#catalogue #container ul#bieres, #catalogue #container ul#pagination {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#catalogue #container ul#bieres {
+	margin-top: 20px;
+	padding: 30px 0 30px 0;
+	background-color: black;
+	border-top: solid 3px #D8E1C6;
+	border-bottom: solid 3px #D8E1C6;
+	border-radius: 50px;
+}
+
+#catalogue #container ul#bieres li a img {
+	margin: 3px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px #53290B;
+	transition: all .5s ease;
+}
+
+#catalogue #container ul#bieres li a img:hover {
+	border-radius: 150px;
+	box-shadow: 0 0 10px white;
+}
+
+#catalogue #container ul#pagination {
+	margin-top: 20px;
+	padding: 10px 0 30px 0;
+}
+
+#catalogue #container ul#pagination li a {
+	color: #2B0900;
+	padding: 5px;
+	background-color: white;
+	border-radius: 15px;
+}
+
+#catalogue #container ul#pagination li a:hover {
+	color: white;
+	background-color: #5C300D;
+}
+
+/* =============================== */
+/* ======== Brasseries ========== */
+/* ============================= */
+
+#brasseries {
+	padding-bottom: 30px;
+	background: url('../../entrepot/images-fond/biere-fond_main.jpg') no-repeat fixed bottom;
+}
+
+#brasseries #container {
+	color: white;
+	width: 70%;
+	margin: auto;
+	padding: 30px 0 30px 0;
+	text-align: center;
+	background-color: #2B0900;
+	border-top: none;
+	border-left: solid 7px #6F4012;
+	border-right: solid 7px #6F4012;
+	border-bottom: solid 3px #6F4012;
+	opacity: 0.9;
+	border-radius: 0 0 600px 600px;
+	box-shadow: 0 5px 100px black inset;
+}
+
+#brasseries #container h2 {
+	margin-bottom: 30px;
+	background-color: #592E0C;
+	text-shadow: 0 0 3px #2B0900;
+}
+
+#brasseries #container p {
+	width: 90%;
+	margin: auto;
+	text-align: justify;
+	padding-bottom: 15px;
+}
+
+#brasseries #container #carte_interactive {
+	display: inline-block;
+	text-align: center;
+	margin: 30px 0 30px 0;
+}
+
+#brasseries #container #liens_brasseries {
+	display: none;
+}
+
+/* =============================== */
+/* ========= Événements ========= */
+/* ============================= */
+
+#evenements {
+	color: white;
+	background: url('../../entrepot/images-fond/biere-fond_main.jpg') no-repeat fixed bottom;
+}
+
+#evenements #container h2 {
+	width: 50%;
+	margin: auto;
+	padding: 3px;
+	text-align: center;
+	margin-bottom: 30px;
+	background-color: #592E0C;
+	opacity: 0.9;
+	box-shadow: 0 0 5px #3E1B01 inset;
+	text-shadow: 0 0 3px #2B0900;
+	border-radius: 0 0 15px 15px;
+}
+
+#evenements #container #container-mini {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#evenements #container #container-mini #datepicker {
+	display: flex;
+	justify-content: center;
+	width: 25%;
+	height: 265px;
+	padding: 30px;
+	background-color: #EFEFEF;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 0 10px #2B0900;
+}
+
+#evenements #container #container-mini #datepicker div.ui-datepicker {
+	width: 100%;
+}
+
+#evenements #container #container-mini #datepicker div.ui-datepicker div.ui-datepicker-header div.ui-datepicker-title {
+	text-align: center;
+}
+
+#evenements #container #container-mini #description {
+	width: 50%;
+	background-color: #2B0900;
+	opacity: 0.9;
+	border-radius: 0 50px 0 0;
+	box-shadow: 0 0 10px #2B0900;
+}
+
+#evenements #container #container-mini #description h3 {
+	text-align: center;
+	margin: 30px 0 30px 0;
+	color: #CF8801;
+	font-size: x-large;
+}
+
+#evenements #container #container-mini #description p {
+	width: 90%;
+	margin: auto;
+	padding-bottom: 30px;
+	text-align: justify;
+}
+
+#evenements #container #container-mini #description p img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px solid black;
+	border-image: url('../../entrepot/images-fond/texture-bois.png') 42 round stretch;
+}
+
+#evenements #container #container-mini #description p:last-child {
+	font-style: italic;
+	color: #81510B;
+}
+
+#evenements #container #container-mini #description p:last-child a {
+	font-weight: bold;
+	color: #CF8801;
+}
+
+#evenements #container #container-mini #description p:last-child a:hover {
+	color: #81510B;
+}
+
+@media screen and (max-width: 1200px) {
+	#evenements #container h2 {
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	
+	#evenements #container #container-mini {
+		flex-direction: column;
+	}
+	
+	#evenements #container #container-mini #datepicker {
+		width: 50%;
+		margin: auto;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		border-radius: 0;
+	}
+	
+	#evenements #container #container-mini #description {
+		width: 80%;
+		margin: auto;
+		border-radius: 50px 50px 0 0;
+	}
+}
+
+/* =============================== */
+/* ========== Contact =========== */
+/* ============================= */
+
+#contact {
+	background: url('../../entrepot/images-fond/biere-fond_main.jpg') no-repeat fixed bottom;
+	text-align: center;
+	padding: 30px;
+	box-shadow: 0 0 10px #6F4012 inset;
+}
+
+#contact #container {
+	padding: 50px;
+	width: 50%;
+	margin: auto;
+	background-color: white;
+	border-radius: 50px;
+	box-shadow: 0 0 10px #2B0900;
+}
+
+#contact #container h2 {
+	font-family: sans-serif;
+	font-variant: small-caps;
+	margin-bottom: 30px;
+}
+
+#contact #container form label {
+	margin-left: 15px;
+	background-color: #D08204;
+	border: solid 1px #D08204;
+	padding: 5px;
+	color: white;
+	display: inline-block;
+	width: 65px;
+	border-radius: 10px 0 0 10px;
+}
+
+#contact #container form label[for='message'] {
+	position: relative;
+	left: -195px;
+	border-radius: 10px 10px 0 0;
+}
+
+#contact #container form fieldset .texte {
+	display: inline-block;
+	padding: 5px;
+	margin-bottom: 15px;
+	border: solid 2px #D08204;
+	border-radius: 0 10px 10px 0;
+}
+
+#contact #container form textarea {
+	width: 500px;
+	height: 130px;
+	border: solid 5px #D08204;
+	resize: vertical;
+	border-radius: 10px;
+}
+
+#contact #container form .boutons {
+	margin-top: 20px;
+	padding: 5px;
+	color: white;
+	background-color: #D08204;
+	border-radius: 10px;
+}
+
+#contact #container form .boutons:hover {
+	color: black;
+	background-color: #F0C10F;
+}
+
+#contact #container form .boutons:active {
+	color: white;
+}
+
+#contact #container form fieldset .texte:focus, #contact textarea:focus {
+	background-color: #fffea3;
+}
+
+/* =============================== */
+/* ====== Pages secondaires ===== */
+/* ============================= */
+
+#news, #biere, #brasserie {
+	background: url('../../entrepot/images-fond/biere-fond_main.jpg') no-repeat fixed bottom;
+}
+
+#news #container, #biere #container, #brasserie #container {
+	width: 80%;
+	margin: auto;
+	padding: 30px 0 30px 0;
+	text-align: center;
+	background-color: #2B0900;
+	opacity: 0.9;
+	box-shadow: 0 0 10px #2B0900;
+}
+
+#news #container h2, #biere #container h2, #brasserie #container h2 {
+	color: white;
+	background-color: #592E0C;
+	margin-bottom: 30px;
+	text-shadow: 0 0 3px #2B0900;
+}
+
+#news #container h3, #biere #container h3, #brasserie #container h3 {
+	color: #CC8300;
+}
+
+#news #container p, #biere #container p, #brasserie #container p {
+	color: white;
+	padding-bottom: 30px;
+	width: 90%;
+	margin: auto;
+	text-align: justify;
+}
+
+#news #container img, #biere #container img, #brasserie #container img {
+	width: 15%;
+	margin: auto;
+	border: 10px solid black;
+	border-image: url('../../entrepot/images-fond/texture-bois.png') 42 round stretch;
+}
+
+#news #container h3 + p, #biere #container h3 + p, #brasserie #container h3 + p {
+	margin-top: 20px;
+}
+
+/* =============================== */
+/* ========== Erreur ============ */
+/* ============================= */
+
+#erreur {
+	background-color: #000306;
+}
+
+#erreur #container {
+	width: 100%;
+}
+
+#erreur #container p {
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+	font-style: italic;
+	background-color: #252525;
+}
+
+#erreur #container img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* =============================== */
+/* =========== Footer =========== */
+/* ============================= */
+
+footer {
+	
+	background-image: url('../../entrepot/images-fond/texture-bois.png');
+	padding: 25px 0 25px 0;
+	border-top: solid 5px #6F4012;
+	box-shadow: 0 0 15px #6F4012 inset;
+}
+
+footer p {
+	font-weight: bold;
+	font-size: large;
+	font-family: sans-serif;
+	text-align: center;
+	color: #4C1D0D;
+	font-variant: small-caps;
+	padding: 5px;
+	background-color: rgba(43,9,0,0.2);
+	text-shadow: 0 0 3px white;
+}
+
+footer p a {
+    color: #4C1D0D;
+    font-weight: normal;
+    font-variant: normal;
+}

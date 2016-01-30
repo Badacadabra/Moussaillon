@@ -1,0 +1,229 @@
+/* =============================== */
+/* ======== Header & Nav ======== */
+/* ============================= */
+
+/* ======= Header ======= */
+
+header img {
+	display: none;
+}
+
+header h1 {
+	font-size: 22px;
+	width: 75%;
+	position: relative;
+	top: 127px;
+}
+
+@-moz-document url-prefix() { /* Hack Firefox */
+	header h1 { top: 125px; }
+}
+
+/* ======= Nav ======= */
+
+#main-nav nav ul {
+	flex-direction: column;
+	margin: auto;
+	width: 75%;
+}
+
+#main-nav nav ul li {
+	border-radius: 15px;
+	margin: 3px;
+	background-image: none;
+	background-color: #2B0900;
+}
+
+#main-nav nav ul li:hover {
+	background-position: 0 0;
+}
+
+#main-nav nav ul li a {
+	color: white;
+	padding: 5px;
+	font-style: italic;
+	text-shadow: none;
+}
+
+/* =============================== */
+/* ============ Home ============ */
+/* ============================= */
+
+/* ======= Global ======= */
+
+#wrapper h3 {
+	font-size: 20px;
+}
+
+/* ======= News ======= */
+
+#wrapper #news section article p {
+	display: none;
+}
+
+/* =============================== */
+/* ========= Zythologie ========= */
+/* ============================= */
+
+#zythologie #container {
+	width: 100%;
+}
+
+#zythologie #container p {
+	text-align: initial;
+}
+
+/* =============================== */
+/* ========= Catalogue ========== */
+/* ============================= */
+
+#catalogue #container {
+	width: 100%;
+}
+
+#catalogue #container p {
+	text-align: initial;
+}
+
+#catalogue #container ul#bieres li a img {
+	transform: scale(0.8);
+}
+
+/* =============================== */
+/* ======== Brasseries ========== */
+/* ============================= */
+
+#brasseries {
+	padding: 0;
+}
+
+#brasseries #container {
+	width: 100%;
+	border: none;
+	border-radius: 0;
+}
+
+#brasseries #container #carte_interactive {
+	display: none;
+}
+
+#brasseries #container #liens_brasseries {
+	display: block;
+}
+
+#brasseries #container #liens_brasseries ul {
+	list-style-type: none;
+}
+
+#brasseries #container #liens_brasseries ul li {
+	display: inline-block;
+	background-color: #6F4012;
+	margin: 3px;
+	padding: 5px;
+}
+
+#brasseries #container #liens_brasseries ul li a {
+	color: white;
+}
+
+/* =============================== */
+/* ======== Événements ========== */
+/* ============================= */
+
+#evenements #container #container-mini #datepicker {
+	width: 100%;
+	padding: 15px 0 15px 0;
+}
+
+#evenements #container #container-mini #description {
+	width: 100%;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#evenements #container #container-mini #description p {
+	text-align: initial;
+}
+
+/* =============================== */
+/* ========== Contact =========== */
+/* ============================= */
+
+#contact {
+	padding: 0;
+}
+
+#contact #container {
+	width: 100%;
+	padding: 20px 0 20px 0;
+	background-color: #6F4012;
+	opacity: 0.9;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#contact #container h2 {
+	color: white;
+}
+
+@media screen and (max-width: 550px) {
+	#contact #container form fieldset .texte {
+		width: 180px;
+	}
+
+	#contact #container form label[for='message'] {
+		padding: 2px;
+		left: 60px;
+	}
+
+	#contact #container form textarea {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	#contact #container form label {
+		padding: 2px;
+		position: relative;
+		left: -60px;
+		border-radius: 10px 10px 0 0;
+	}
+	
+	#contact #container form fieldset .texte {
+		width: 200px;
+		border-radius: 10px;
+	}
+}
+
+/* =============================== */
+/* ====== Pages secondaires ===== */
+/* ============================= */
+
+#news #container, #biere #container, #brasserie #container {
+	width: 100%;
+}
+
+#news #container p, #biere #container p, #brasserie #container p {
+	text-align: initial;
+}
+
+/* =============================== */
+/* ============ Erreur ========== */
+/* ============================= */
+
+#erreur #container p {
+	font-size: medium;
+}
+
+#erreur #container img {
+	width: 250px;
+	height: 250px;
+}
+
+/* =============================== */
+/* =========== Footer =========== */
+/* ============================= */
+
+footer p {
+	font-size: small;
+}

@@ -1,0 +1,165 @@
+/* =============================== */
+/* ======== Header & Nav ======== */
+/* ============================= */
+
+/* ======= Header ======= */
+
+header img:first-child {
+	left: 50px;
+}
+
+header h1 {
+	font-size: 24px;
+	position: relative;
+	top: 124px;
+}
+
+@-moz-document url-prefix() { /* Hack Firefox */
+	header h1 { top: 122px; }
+}
+
+/* ======= Nav ======= */
+
+#main-nav nav ul li {
+	transform: scale(0.9);
+}
+
+/* =============================== */
+/* ============ Home ============ */
+/* ============================= */
+
+/* ======= Welcome ======= */
+
+#wrapper #welcome {
+	flex-direction: column;
+}
+
+#wrapper #welcome article, #wrapper #welcome aside {
+	width: 90%;
+	margin: auto;
+}
+
+#wrapper #welcome article {
+	padding-bottom: 30px;
+}
+
+#wrapper #welcome article h2 {
+	padding: 0;
+}
+
+/* ======= Slider ======= */
+
+#wrapper #slider {
+	padding: 0;
+}
+
+#wrapper #slider ul li a img {
+	transform: scale(0.9);
+}
+
+/* ======= News ======= */
+
+#wrapper #news section article {
+	width: 100%;
+}
+
+#wrapper #news section img {
+	display: none;
+}
+
+#wrapper #news section article h4 {
+	text-align: center;
+}
+
+/* =============================== */
+/* ========= Zythologie ========= */
+/* ============================= */
+
+/* ======= Sommaire (out) ======= */
+
+#zythologie aside {
+	display: none;
+}
+
+/* ======= Container ======= */
+
+#zythologie #container {
+	width: 80%;
+	margin: auto;
+}
+
+#zythologie #container nav#sommaire-in {
+	display: block;
+}
+
+#zythologie #container nav#sommaire-in h3 {
+	text-decoration: underline;
+	text-align: center;
+}
+
+#zythologie #container nav#sommaire-in a {
+	color: #CE7B00;
+}
+
+#zythologie #container nav#sommaire-in a:hover {
+	color: #572D0C;
+}
+
+#zythologie #container nav#sommaire-in ul {
+	padding: 0;
+	list-style-image: none;
+	list-style-type: none;
+	text-align: center;
+}
+
+#zythologie #container nav#sommaire-in ul li {
+	margin: 5px;
+}
+
+#zythologie #container nav#sommaire-in ul li a {
+	font-weight: bold;
+	font-size: large;
+}
+
+#zythologie #container nav#sommaire-in ul ul li a {
+	font-weight: normal;
+	font-style: italic;
+	font-size: medium;
+}
+
+#zythologie #container nav#sommaire-in ul ul ul li a {
+	font-style: normal;
+	font-size: small;
+}
+
+/* =============================== */
+/* ========= Catalogue ========== */
+/* ============================= */
+
+#catalogue #container ul#bieres li a img {
+	transform: scale(0.9);
+}
+
+/* =============================== */
+/* ======== Brasseries ========== */
+/* ============================= */
+
+#brasseries #container {
+	width: 80%;
+}
+
+/* =============================== */
+/* ========== Contact =========== */
+/* ============================= */
+
+#contact #container {
+	width: 75%;
+}
+
+/* =============================== */
+/* ====== Pages secondaires ===== */
+/* ============================= */
+
+#news #container img, #biere #container img, #brasserie #container img {
+	border-width: 5px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="author" content="Baptiste Vannesson" />
+            <meta charset="utf-8" />
+            <title><?php echo $titre; ?></title>
+            <link rel="stylesheet" href="ui/css/large.css" media="screen" />
+            <link rel="stylesheet" href="ui/css/medium.css" media="screen and (max-width: 1023px)" />
+            <link rel="stylesheet" href="ui/css/small.css" media="screen and (max-width: 720px)" />
+            <?php echo $script; ?>
+        </head>
+        <body>
+            <header>
+                <img src="entrepot/images-contenu/logo.png" alt="Logo Bière, Paul, Jacques" />
+                <h1>Mouss'aillon</h1>
+                <img src="entrepot/images-contenu/ruban.png" alt="Certifié Anonymousse" />
+            </header>
+            <div id="main-nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.php?page=accueil">Accueil</a></li>
+                        <li><a href="index.php?page=zythologie">Zythologie</a></li>
+                        <li><a href="index.php?page=catalogue">Catalogue</a></li>
+                        <li><a href="index.php?page=brasseries">Brasseries</a></li>
+                        <li><a href="index.php?page=evenements">Événements</a></li>
+                        <li><a href="index.php?page=contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <?php echo $contenu; ?>
+            <footer>
+                <p>Mini-site de Baptiste Vannesson - M1 DNR2I - 2014/2015 | <a href="apropos/sources.xml" target="_blank">Sources</a></p>
+            </footer>
+        </body>
+    </html>
